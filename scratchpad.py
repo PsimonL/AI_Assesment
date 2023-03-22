@@ -1,16 +1,28 @@
-# This is a sample Python script.
+import requests
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# https://developer.airly.org/pl/docs#general.coordinates
 
+API_KEY = 'TU_WPROWADZ_SWOJ_KLUCZ_API'
+ENDPOINT_URL = 'https://airapi.airly.eu/v2/measurements'
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Współrzędne geograficzne miejsca, dla którego chcesz pobrać dane.
+lat = 52.23
+lng = 21.01
 
+# Parametry zapytania.
+params = {
+    'indexType': 'AIRLY_CAQI',
+    'lat': lat,
+    'lng': lng
+}
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# Nagłówki zapytania zawierające klucz API.
+headers = {
+    'Accept': 'application/json',
+    'apikey': API_KEY
+}
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Wysłanie zapytania.
+response = requests.get(ENDPOINT_URL, params=params, headers=headers)
+data = response.json()
+print(data)
