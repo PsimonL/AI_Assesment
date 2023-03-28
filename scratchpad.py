@@ -1,16 +1,27 @@
-# This is a sample Python script.
+from bs4 import BeautifulSoup
+from model import VolkswagenModel
+import pandas as pd
+import requests
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+data = []
 
+for page_number in range(1, 563):
+    # There is 563 pages. 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    url = f"https://www.otomoto.pl/osobowe/volkswagen?page={page_number}"
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, "html.parser")
+    articles = soup.find_all('article', attrs={'class': 'ooa-1g2kumr eayvfn60'})
+    if len(articles) == 0: articles = soup.find_all('article', attrs={'class': 'ooa-1rudse5 eayvfn60'})
 
+    for article in articles:
+        
+        price = article.find_all('span', attrs={'class': 'ooa-1bmnxg7 eayvfn611'})
+        rest = article.find_all('li', attrs={'class': 'ooa-1k7nwcr e19ivbs0'})
+        if(rest[0].text == 'Niski przebieg'): row = VolkswagenModel(price[0].text, rest[1].text, rest[2].text, rest[3].text)
+        else : row = VolkswagenModel(price[0].text, rest[0].text, rest[1].text, rest[2].text)
+        row.clean_data()
+        data.append(row.return_data())  
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+df = pd.DataFrame(data)
+df.to_csv('./AI_UniClasses_Assesment/data/otomoto.csv')
