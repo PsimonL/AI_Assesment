@@ -5,6 +5,7 @@ import requests
 
 data = []
 
+# Simple web scraper
 for page_number in range(1, 563):
     # There is 563 pages. 
 

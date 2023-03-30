@@ -2,5 +2,7 @@
 
 ![Volkswagen](https://a11ybadges.com/badge?logo=volkswagen) ![Python](https://a11ybadges.com/badge?logo=python) ![TensorFlow](https://a11ybadges.com/badge?logo=tensorflow)
 
-Python scripts developed to perform analysis on Volkswagen car prices. The data was scrapped from the popular Polish website Otomoto(https://www.otomoto.pl/). 
+Python scripts developed to perform analysis on Volkswagen car prices. 
+The data was scrapped from the popular Polish website Otomoto(https://www.otomoto.pl/) using Beautiful Soup Python library. 
+Whole project is going to be based on Recurrent Neural Networks (casual RNN).
 
