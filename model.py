@@ -13,6 +13,7 @@ class VolkswagenModel(object):
         self.model = model
         self.estimation = estimation
 
+    # Data cleaning
     def clean_data(self):
 
         # Price
@@ -54,7 +55,6 @@ class VolkswagenModel(object):
         # 5 -> Hybrid
         # 6 -> Hydrogen
         # 7 -> Diesel
-
         text = self.fuel.replace(" ", "")
         if text == "Benzyna": self.fuel = int(1)
         elif text == "Benzyna+LPG": self.fuel = int(2)
