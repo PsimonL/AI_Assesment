@@ -79,7 +79,6 @@ class VolkswagenModel(object):
         # 1 -> Below average
         # 2 -> Within average
         # 3 -> Above average
-        
         if self.estimation == "Poniżej średniej": self.estimation = int(1)
         elif self.estimation == "W granicach średniej": self.estimation = int(2)
         elif self.estimation == "Powyżej średniej": self.estimation = int(3)
