@@ -27,8 +27,15 @@ for page_number in range(1, 563):
         elif rest[0].text != 'Niski przebieg' and len(estimations) != 0: row = VolkswagenModel(price[0].text, rest[0].text, rest[1].text, rest[2].text, rest[3].text, model[0].text, estimations[0].text)
         
         row.clean_data()
-        data.append(row.return_data())  
+        data.append(row.return_data())
 
 df = pd.DataFrame(data)
+df.columns = ['Price', 'Year', 'Mileage', 'Tank capacity', 'Fuel type', 'Model', 'Estimation']
 print(df)
+print(df.dtypes)
+
+for index, row in df.iterrows():
+    if row["Price"] == '-' or row["Mileage"] == '-' or row["Tank capacity"] == '-' or row["Model"] == '-': 
+        df = df.drop(labels=[index], axis=0)
+
 df.to_csv('./AI_UniClasses_Assesment/data/otomoto.csv')
