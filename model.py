@@ -46,9 +46,24 @@ class VolkswagenModel(object):
             self.capacity = '-'
 
         # Fuel type
-        text = self.fuel
-        if text == "Benzyna": self.fuel = int(0)
-        else: self.fuel = int(1)
+        # 0 -> Lack of data
+        # 1 -> Petrol
+        # 2 -> Petrol + LPG
+        # 3 -> Petrol + CNG
+        # 4 -> Electric
+        # 5 -> Hybrid
+        # 6 -> Hydrogen
+        # 7 -> Diesel
+
+        text = self.fuel.replace(" ", "")
+        if text == "Benzyna": self.fuel = int(1)
+        elif text == "Benzyna+LPG": self.fuel = int(2)
+        elif text == "Benzyna+CNG": self.fuel = int(3)
+        elif text == "Elektryczny": self.fuel = int(4)
+        elif text == "Hybryda": self.fuel = int(5)
+        elif text == "Wodór": self.fuel = int(6)
+        elif text == "Diesel": self.fuel = int(7)
+        else: self.fuel = int(0)
 
         # Model
         check = False
@@ -60,13 +75,15 @@ class VolkswagenModel(object):
         else: self.model = int(self.model)
 
         # Estimation
-        # 0 -> Below average
-        # 1 -> Within average
-        # 2 -> Above average
-        # - -> Lack of data
-        if self.estimation == "Poniżej średniej": self.estimation = int(0)
-        if self.estimation == "W granicach średniej": self.estimation = int(1)
-        if self.estimation == "Powyżej średniej": self.estimation = int(2)
+        # 0 -> Lack of data
+        # 1 -> Below average
+        # 2 -> Within average
+        # 3 -> Above average
+        
+        if self.estimation == "Poniżej średniej": self.estimation = int(1)
+        elif self.estimation == "W granicach średniej": self.estimation = int(2)
+        elif self.estimation == "Powyżej średniej": self.estimation = int(3)
+        else: self.estimation = int(0)
 
     def return_data(self):
 
