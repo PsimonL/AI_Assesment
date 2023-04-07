@@ -3,14 +3,15 @@
 
 
 Tech stack used:
-- [Python 3.0](https://www.python.org/)
-- [Jupyter Notebook](https://jupyter.org/)
-- [Tensorflow](https://www.tensorflow.org/?hl=pl)
-- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-- [Seaborn](https://seaborn.pydata.org/)
-- [Matplotlib](https://matplotlib.org/stable/index.html)
-- [Pandas](https://pandas.pydata.org/)
-- [StatsModel](https://www.statsmodels.org/stable/index.html)
+- [Python => ](https://www.python.org/) 3.10.6
+- [Jupyter Notebook => ](https://jupyter.org/) 6.4.12
+- [Tensorflow => ](https://www.tensorflow.org/?hl=pl) 2.11.0 
+- [BeautifulSoup => ](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) 4.12.1
+- [Numpy => ](https://numpy.org/) 1.23.2
+- [Seaborn => ](https://seaborn.pydata.org/) 0.12.1 
+- [Matplotlib => ](https://matplotlib.org/stable/index.html) 3.5.3
+- [Pandas => ](https://pandas.pydata.org/) 1.4.4
+- [StatsModel => ](https://www.statsmodels.org/stable/index.html) 0.13.2
 
 To download, open Pycharm and use Python manager called **pip**:
 ```
