@@ -37,7 +37,14 @@ Whole project is going to be based on Recurrent Neural Networks (casual RNN).
 ## Project description:
 Whole project description could be found in folder: "project_report(in_Polish)".  
 But as name can suggest it is written in Polish. Basically it's a report which was created as a part of
-AI classes at university.
+AI classes at university.  
+In short, translation of title of each subpoint:
+"  
+1. Description of the problem and data
+2. Data preprocessing
+3. Description of the applied neural networks
+4. Discussion of results and conclusions
+"  
 
 ### Project authors:
 - Szymon Rogowski
