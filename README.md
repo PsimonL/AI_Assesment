@@ -35,11 +35,14 @@ The data was scrapped from the popular Polish website OtoMoto (https://www.otomo
 Whole project is going to be based on Recurrent Neural Networks (casual RNN).
 
 ## Project description:
-Whole project description could be found in folder: "project_report(in_Polish)". 
+Whole project description could be found in folder: "project_report(in_Polish)".  
 But as name can suggest it is written in Polish. Basically it's a report which was created as a part of
 AI classes at university.
 
-### 
+### Project authors:
 - Szymon Rogowski
 - Piotr Sobol
 
+### University
+AGH University of Science and Technology in Kraków, Poland  
+Industrial Computer Science, Computational Engineering students at WIMIIP faculty.
