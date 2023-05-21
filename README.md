@@ -46,10 +46,17 @@ In short, title translation of each subpoint:
 4. Discussion of results and conclusions
 "  
 
-### Project authors:
-- Szymon Rogowski
-- Piotr Sobol
+## TODO:
+Maybe in the future there will be finished "hyperparameters tunning", no time to fix it now - doesn't work properly.  
+Literature describing the concept of hyperparameters tunning:
+- https://www.analyticsvidhya.com/blog/2022/02/a-comprehensive-guide-on-hyperparameter-tuning-and-its-techniques/
+- https://towardsdatascience.com/hyperparameter-tuning-in-python-21a76794a1f7
+- https://scikit-learn.org/stable/modules/grid_search.html
+
+### Project authors:  
+- [Szymon Rogowski] (https://github.com/PsimonL)  
+- [Piotr Sobol] (https://github.com/Pyother)  
 
 ### University
 AGH University of Science and Technology in Kraków, Poland  
-Industrial Computer Science, Computational Engineering students at WIMIIP faculty.
+Industrial Computer Science, Computational Engineering students at WIMIIP faculty, 6th term - **Bachelor's degree in Engineering (Technical Informatics and Telecommunications)**.
