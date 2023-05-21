@@ -34,14 +34,12 @@ Python scripts developed to perform analysis on Volkswagen car prices.
 The data was scrapped from the popular Polish website OtoMoto (https://www.otomoto.pl/) using Beautiful Soup Python library. 
 Whole project is going to be based on Recurrent Neural Networks (casual RNN).
 
-## Description of models:
-### MLP
-### RNN
-#### LSTM
-#### GRU
+## Project description:
+Whole project description could be found in folder: "project_report(in_Polish)". 
+But as name can suggest it is written in Polish. Basically it's a report which was created as a part of
+AI classes at university.
 
-## Statistical analysis:
-
-## Conclusions:
-
+### 
+- Szymon Rogowski
+- Piotr Sobol
 
