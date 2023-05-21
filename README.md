@@ -1,11 +1,18 @@
- # Volkswagen car prices prediction
-![Volkswagen](https://a11ybadges.com/badge?logo=volkswagen)![Python](https://a11ybadges.com/badge?logo=python)![TensorFlow](https://a11ybadges.com/badge?logo=tensorflow)
+ # Volkswagen Car Prices Prediction
+![Volkswagen](https://a11ybadges.com/badge?logo=volkswagen)  
+![Python](https://a11ybadges.com/badge?logo=python)
+![TensorFlow](https://a11ybadges.com/badge?logo=tensorflow)
+![Keras](https://a11ybadges.com/badge?logo=keras)
+![BeautifulSoup](https://a11ybadges.com/badge?logo=beautifulsoup)
+![Numpy](https://a11ybadges.com/badge?logo=numpy)
+![Pandas](https://a11ybadges.com/badge?logo=pandas)
 
 
 Tech stack used:
 - [Python => ](https://www.python.org/) 3.10.6
 - [Jupyter Notebook => ](https://jupyter.org/) 6.4.12
 - [Tensorflow => ](https://www.tensorflow.org/?hl=pl) 2.11.0 
+- [Keras => ](https://en.wikipedia.org/wiki/Keras)
 - [BeautifulSoup => ](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) 4.12.1
 - [Numpy => ](https://numpy.org/) 1.23.2
 - [Seaborn => ](https://seaborn.pydata.org/) 0.12.1 
