@@ -46,6 +46,9 @@ In short, title translation of each subpoint:
 4. Discussion of results and conclusions
 "  
 
+### Useful diagram for ANN different types:  
+![ANN-types](README-photos/ANN-types.png)  
+
 ## TODO:
 Maybe in the future there will be finished "hyperparameters tunning", no time to fix it now - doesn't work properly.  
 Literature describing the concept of hyperparameters tunning:
